@@ -10,10 +10,12 @@ const styles = {
         borderRadius: '5px',
         width: '300px',
         right: 50,
+        zIndex: '4'
     },
     ul:{
         margin: 0,
-        padding: 0
+        padding: 0,
+
     },
     li:{
         listStyleType: 'none',
@@ -21,7 +23,8 @@ const styles = {
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '25px 20px',
-        borderBottom: 'solid 1px #aaa'
+        borderBottom: 'solid 1px #aaa',
+
     }
 }
 class DetallesCarro extends Component{

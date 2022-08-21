@@ -6,7 +6,6 @@ const styles = {
         color: '#000',
         padding: '15px 20px',
         border: 'none',
-        borderRadius: '5px',
         cursor: 'pointer',
         textTransform: 'uppercase',
         fontWeight: 'bold'
