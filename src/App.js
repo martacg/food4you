@@ -3,13 +3,14 @@ import Productos from "./components/Productos";
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
 import Title from "./components/Title";
+import Text from "./components/Text";
 
 class App extends Component {
   state = {
     productos: [
-      { name: "Plato 1", price: "12$", img: "/products/plato-1.png" },
-      { name: "Plato 2", price: 14, img: "/products/plato-2.png" },
-      { name: "Plato 3", price: 8, img: "/products/plato-3.png" },
+      { name: "Plato 1", price: 12, img: "https://martagonzalez.dev/lab/food4you/products/plato-1.png" },
+      { name: "Plato 2", price: 14, img: "https://martagonzalez.dev/lab/food4you/products/plato-2.png" },
+      { name: "Plato 3", price: 8, img: "https://martagonzalez.dev/lab/food4you/products/plato-3.png" },
     ],
     carro: [
       
@@ -56,7 +57,8 @@ class App extends Component {
           mostrarCarro={this.mostrarCarro}
         />
         <Layout>
-          <Title />
+          <Title>Choose & Enjoy</Title>
+          <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Text>
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos}

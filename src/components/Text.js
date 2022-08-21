@@ -1,18 +1,18 @@
 import { Component } from "react"
 
 const styles = {
-    title:{
+    text:{
         marginBottom: '30px 0',
         padding: '0 50px',
     }
 }
-class Title extends Component {
+class Text extends Component {
     render(){
         return(
-            <h1 style={styles.title} {...this.props} />
+            <p style={styles.text} {...this.props}></p>
             
         )
     }
 }
 
-export default Title
+export default Text

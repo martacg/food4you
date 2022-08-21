@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import Producto from './Producto'
+import '../App.css';
 
 const styles = {
     productos: {
@@ -15,13 +16,17 @@ class Productos extends Component {
         const { productos, agregarAlCarro } = this.props
 
         return (
-            <div style={styles.productos}>
+            <div>
+            <div className="productosBackground"></div>
+            <div style={styles.productos} className="productos">
+                
                 {productos.map(producto => 
                 <Producto
                     agregarAlCarro={agregarAlCarro}
                     key={producto.name}
                     producto={producto} />
                 )}
+            </div>
             </div>
         )
     }

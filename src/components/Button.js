@@ -2,12 +2,14 @@ import { Component } from 'react'
 
 const styles = {
     button: {
-        backgroundColor: '#0A283E',
-        color: '#fff',
+        backgroundColor: '#ffe001',
+        color: '#000',
         padding: '15px 20px',
         border: 'none',
         borderRadius: '5px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        textTransform: 'uppercase',
+        fontWeight: 'bold'
     }
 }
 
